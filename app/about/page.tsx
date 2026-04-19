@@ -23,7 +23,7 @@ export default function AboutPage() {
 
       <MotionSection className="mx-auto w-full max-w-[1440px] px-5 pb-24 md:px-10">
         <div className="max-w-4xl space-y-6">
-          {paragraphs.map((paragraph, index) => (
+          {paragraphs.filter(Boolean).map((paragraph, index) => (
             <p key={`bio-${index}`} className="text-base font-light leading-relaxed text-silver-dim">
               {paragraph}
             </p>

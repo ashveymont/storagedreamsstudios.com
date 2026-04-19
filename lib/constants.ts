@@ -101,8 +101,8 @@ export const COPY = {
   aboutBioParagraphThree:
     "In April 2021, he posted a short comedy video about privilege on TikTok. Then another. Then one that got 16 million views and 4 million likes. By the time the algorithm caught up, Rich had built a character, an audience, and a brand that has accumulated over 59.5 million likes without a single paid growth strategy.",
   aboutBioParagraphFour:
-    "Today he runs Storage Dreams Studios — a content and entertainment company built on the simple idea that the funniest takes on tech culture also happen to be the truest ones.",
-  aboutBioParagraphFive: "He lives in NYC, and yes, he still does stand-up.",
+    "Today he runs a content and entertainment company built on the simple idea that the funniest takes on tech culture also happen to be the truest ones. He lives in NYC, and yes, he still does stand-up.",
+  aboutBioParagraphFive: "",
 
   // COPY: Credential 1-6
   credentialOne: "",

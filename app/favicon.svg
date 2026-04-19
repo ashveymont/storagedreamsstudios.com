@@ -2,11 +2,11 @@
   <rect width="64" height="64" fill="#080808" />
   <text
     x="50%"
-    y="54%"
+    y="56%"
     text-anchor="middle"
     fill="#F8F8F8"
     font-family="'Cormorant Garamond', serif"
-    font-size="28"
+    font-size="30"
     font-style="italic"
     font-weight="600"
   >

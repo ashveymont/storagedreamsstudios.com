@@ -19,10 +19,48 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Rich Rosales",
-  description: "Premium talent brand site for Rich Rosales.",
+  metadataBase: new URL("https://storagedreamsstudios.com"),
+  title: {
+    default: "Rich Rosales",
+    template: "%s | Rich Rosales",
+  },
+  description:
+    "Official website of Rich Rosales, comedy creator with 1.1M TikTok followers, premium brand partnerships, and media enquiries.",
+  keywords: [
+    "Rich Rosales",
+    "comedy creator",
+    "TikTok creator",
+    "brand partnerships",
+    "media kit",
+    "press enquiries",
+  ],
+  openGraph: {
+    title: "Rich Rosales",
+    description:
+      "Official website of Rich Rosales, comedy creator with 1.1M TikTok followers, premium brand partnerships, and media enquiries.",
+    url: "https://storagedreamsstudios.com",
+    siteName: "Rich Rosales",
+    images: [
+      {
+        url: "/RichRosalesFavi.svg",
+        width: 1200,
+        height: 630,
+        alt: "Rich Rosales",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Rich Rosales",
+    description:
+      "Official website of Rich Rosales, comedy creator with 1.1M TikTok followers, premium brand partnerships, and media enquiries.",
+    images: ["/RichRosalesFavi.svg"],
+  },
   icons: {
     icon: "/favicon.svg",
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
   },
 };
 
