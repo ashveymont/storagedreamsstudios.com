@@ -4,6 +4,10 @@ import SectionEyebrow from "@/components/SectionEyebrow";
 import { COPY, DEMOGRAPHIC_STATS, PACKAGES } from "@/lib/constants";
 
 export default function BrandsPage() {
+  const mediaKitUrl =
+    process.env.NEXT_PUBLIC_MEDIA_KIT_URL ??
+    "https://docs.google.com/document/d/1SvU_TD-srtofw8wsRaPYvhd1ZrqKX-Lt/edit?usp=sharing&ouid=117544300330288993081&rtpof=true&sd=true";
+
   return (
     <div>
       <MotionSection className="mx-auto w-full max-w-[1440px] px-5 py-20 md:px-10 md:py-24">
@@ -58,7 +62,7 @@ export default function BrandsPage() {
             Email Us
           </a>
           <a
-            href="https://docs.google.com/document/d/1SvU_TD-srtofw8wsRaPYvhd1ZrqKX-Lt/edit?usp=sharing&ouid=117544300330288993081&rtpof=true&sd=true"
+            href={mediaKitUrl}
             target="_blank"
             rel="noreferrer"
             className="border border-silver px-7 py-3 text-xs uppercase tracking-[0.2em] text-silver hover:border-silver-light hover:text-silver-light"

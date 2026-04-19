@@ -18,8 +18,11 @@ const dmSans = DM_Sans({
   weight: ["300", "400"],
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://storagedreamsstudios.com";
+const ogImageUrl = process.env.NEXT_PUBLIC_OG_IMAGE_URL ?? `${siteUrl}/RichRosalesFavi.png`;
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://storagedreamsstudios.com"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Rich Rosales",
     template: "%s | Rich Rosales",
@@ -38,11 +41,11 @@ export const metadata: Metadata = {
     title: "Rich Rosales",
     description:
       "Official website of Rich Rosales, comedy creator with 1.1M TikTok followers, premium brand partnerships, and media enquiries.",
-    url: "https://storagedreamsstudios.com",
+    url: siteUrl,
     siteName: "Rich Rosales",
     images: [
       {
-        url: "/RichRosalesFavi.svg",
+        url: ogImageUrl,
         width: 1200,
         height: 630,
         alt: "Rich Rosales",
@@ -55,12 +58,19 @@ export const metadata: Metadata = {
     title: "Rich Rosales",
     description:
       "Official website of Rich Rosales, comedy creator with 1.1M TikTok followers, premium brand partnerships, and media enquiries.",
-    images: ["/RichRosalesFavi.svg"],
+    images: [ogImageUrl],
+  },
+  robots: {
+    index: true,
+    follow: true,
   },
   icons: {
-    icon: "/favicon.svg",
-    shortcut: "/favicon.svg",
-    apple: "/favicon.svg",
+    icon: [
+      { url: "/favicon.svg", type: "image/svg+xml" },
+      { url: "/favicon-256.png", sizes: "256x256", type: "image/png" },
+    ],
+    shortcut: ["/favicon.svg"],
+    apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
 };
 
