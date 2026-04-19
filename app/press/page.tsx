@@ -36,7 +36,7 @@ export default function PressPage() {
         <div className="border border-border bg-black p-10 md:p-14">
           <h2 className="font-display text-[2.4rem] italic text-white md:text-[3.8rem]">{COPY.pressEnquiriesHeadline}</h2>
           <p className="mt-6 max-w-3xl text-base font-light leading-relaxed text-silver-dim">{COPY.pressEnquiriesBody}</p>
-          <a href="mailto:rich@storagedreamsstudios.com" className="mt-10 inline-flex border border-silver px-7 py-3 text-xs uppercase tracking-[0.2em] text-silver hover:border-silver-light hover:text-silver-light">
+          <a href="mailto:rich@rich-rosales.com" className="mt-10 inline-flex border border-silver px-7 py-3 text-xs uppercase tracking-[0.2em] text-silver hover:border-silver-light hover:text-silver-light">
             Send Press Enquiry
           </a>
         </div>

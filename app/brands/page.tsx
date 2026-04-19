@@ -58,7 +58,7 @@ export default function BrandsPage() {
         <h2 className="font-display text-[2.5rem] italic text-white sm:text-[3rem] md:text-[4rem]">{COPY.brandsCtaHeadline}</h2>
         <p className="mx-auto mt-6 max-w-3xl text-base font-light text-silver-dim">{COPY.brandsCtaSubheadline}</p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-          <a href="mailto:rich@storagedreamsstudios.com" className="border border-white bg-white px-7 py-3 text-xs uppercase tracking-[0.2em] text-black hover:bg-black hover:text-white">
+          <a href="mailto:rich@rich-rosales.com" className="border border-white bg-white px-7 py-3 text-xs uppercase tracking-[0.2em] text-black hover:bg-black hover:text-white">
             Email Us
           </a>
           <a

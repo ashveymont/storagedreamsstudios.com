@@ -147,7 +147,7 @@ export const COPY = {
   brandsCtaHeadline: "Ready to reach 1.1 million people who actually care about tech?",
   // COPY: Brands CTA Sub
   brandsCtaSubheadline:
-    "Download our media kit or email us directly at rich@storagedreamsstudios.com. We respond within 24 hours. We close within a week.",
+    "Download our media kit or email us directly at rich@rich-rosales.com. We respond within 24 hours. We close within a week.",
 
   // COPY: Press Page Headline
   pressHeadline: "Rich in the media",
@@ -155,17 +155,17 @@ export const COPY = {
   pressEnquiriesHeadline: "For interviews, features, podcast appearances, and media requests:",
   // COPY: Press Enquiries Body
   pressEnquiriesBody:
-    "rich@storagedreamsstudios.com\n\nFor TV, film, and speaking engagements: contact LBI Entertainment via storagedreamsstudios.com",
+    "rich@rich-rosales.com\n\nFor TV, film, and speaking engagements: contact LBI Entertainment via storagedreamsstudios.com",
 
   // COPY: Contact Headline
   contactHeadline: "Ready to reach 1.1 million people who actually care about tech?",
   // COPY: Contact Sub
   contactSubheadline:
-    "Download our media kit or email us directly at rich@storagedreamsstudios.com. We respond within 24 hours. We close within a week.",
+    "Download our media kit or email us directly at rich@rich-rosales.com. We respond within 24 hours. We close within a week.",
 
   // COPY: Contact Detail 1-4 Label + Value
   contactDetailOneLabel: "Email",
-  contactDetailOneValue: "rich@storagedreamsstudios.com",
+  contactDetailOneValue: "rich@rich-rosales.com",
   contactDetailTwoLabel: "Studio",
   contactDetailTwoValue: "Storage Dreams Studios",
   contactDetailThreeLabel: "Location",
@@ -294,12 +294,12 @@ export const PRESS_CHANNELS = [
   // COPY: Press Channel 1 Title + Body
   {
     title: "Interviews",
-    body: "For interviews, features, podcast appearances, and media requests: rich@storagedreamsstudios.com",
+    body: "For interviews, features, podcast appearances, and media requests: rich@rich-rosales.com",
   },
   // COPY: Press Channel 2 Title + Body
   {
     title: "Features",
-    body: "Press and editorial enquiries can be directed to rich@storagedreamsstudios.com",
+    body: "Press and editorial enquiries can be directed to rich@rich-rosales.com",
   },
   // COPY: Press Channel 3 Title + Body
   {

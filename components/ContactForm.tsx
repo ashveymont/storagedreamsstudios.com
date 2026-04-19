@@ -26,7 +26,7 @@ export default function ContactForm({ options }: ContactFormProps) {
       `Name: ${fields.name}\nCompany & Brand: ${fields.company}\nEmail: ${fields.email}\nPartnership Interest: ${fields.interest}\n\nMessage:\n${fields.message}`
     );
 
-    window.location.href = `mailto:rich@storagedreamsstudios.com?subject=${subject}&body=${body}`;
+    window.location.href = `mailto:rich@rich-rosales.com?subject=${subject}&body=${body}`;
   };
 
   return (
