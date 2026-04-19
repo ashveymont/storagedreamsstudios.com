@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     template: "%s | Rich Rosales",
   },
   description:
-    "Official website of Rich Rosales, comedy creator with 1.1M TikTok followers, premium brand partnerships, and media enquiries.",
+    "Official website of Rich Rosales, comedy creator with 1.3M TikTok followers, premium brand partnerships, and media enquiries.",
   keywords: [
     "Rich Rosales",
     "comedy creator",
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Rich Rosales",
     description:
-      "Official website of Rich Rosales, comedy creator with 1.1M TikTok followers, premium brand partnerships, and media enquiries.",
+      "Official website of Rich Rosales, comedy creator with 1.3M TikTok followers, premium brand partnerships, and media enquiries.",
     url: siteUrl,
     siteName: "Rich Rosales",
     images: [
@@ -57,7 +57,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Rich Rosales",
     description:
-      "Official website of Rich Rosales, comedy creator with 1.1M TikTok followers, premium brand partnerships, and media enquiries.",
+      "Official website of Rich Rosales, comedy creator with 1.3M TikTok followers, premium brand partnerships, and media enquiries.",
     images: [ogImageUrl],
   },
   robots: {

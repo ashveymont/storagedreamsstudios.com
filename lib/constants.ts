@@ -40,13 +40,13 @@ export const COPY = {
   heroHeadlineAccent: "Are you next?",
   // COPY: Hero Subheadline
   heroSubheadline:
-    "Rich Rosales is the creator brands choose when they need tech culture told with a punchline. 59.5 million likes. 1.1 million followers. And a character that turns complex products into content people actually finish.",
+    "Rich Rosales is the creator brands choose when they need tech culture told with a punchline. 59.5 million likes. 1.3 million followers. And a character that turns complex products into content people actually finish.",
 
   // COPY: Stat 1
   statOneNumber: "59.5M",
   statOneLabel: "TikTok Likes",
   // COPY: Stat 2
-  statTwoNumber: "1.1M",
+  statTwoNumber: "1.3M",
   statTwoLabel: "Followers",
   // COPY: Stat 3
   statThreeNumber: "16M",
@@ -222,7 +222,7 @@ export const CHARACTER_CARDS: CharacterCardCopy[] = [
 
 export const DEMOGRAPHIC_STATS = [
   // COPY: Demo Stat 1 Number + Label
-  { number: "1.1M", label: "Followers" },
+  { number: "1.3M", label: "Followers" },
   // COPY: Demo Stat 2 Number + Label
   { number: "59.5M", label: "TikTok Likes" },
   // COPY: Demo Stat 3 Number + Label
@@ -235,7 +235,7 @@ export const PLATFORM_ROWS = [
   // COPY: Platform Row 1
   {
     platform: "TikTok",
-    followers: "1.1M",
+    followers: "1.3M",
     avgViews: "—",
     engagementRate: "12.4%",
     peak: "16M",
