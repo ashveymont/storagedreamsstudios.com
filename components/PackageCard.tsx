@@ -15,7 +15,7 @@ export default function PackageCard({
 }: PackageCardProps) {
   return (
     <article
-      className={`relative border p-8 transition-colors ${
+      className={`relative border p-6 transition-colors sm:p-8 ${
         featured
           ? "border-silver bg-surface"
           : "border-border bg-surface hover:border-border-hover hover:bg-[rgba(26,26,26,0.72)]"

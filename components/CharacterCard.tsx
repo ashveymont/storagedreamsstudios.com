@@ -15,7 +15,7 @@ export default function CharacterCard({
 }: CharacterCardProps) {
   return (
     <article
-      className={`flex min-h-[280px] flex-col border p-10 transition-colors duration-200 ${
+      className={`flex min-h-[260px] flex-col border p-6 transition-colors duration-200 sm:min-h-[280px] sm:p-10 ${
         highlight
           ? "border-silver/80 bg-[rgba(26,26,26,0.32)]"
           : "border-border bg-black hover:border-border-hover hover:bg-[rgba(26,26,26,0.28)]"

@@ -11,7 +11,7 @@ export default function ContactPage() {
   ];
 
   return (
-    <MotionSection className="mx-auto grid w-full max-w-[1440px] gap-10 px-5 py-20 md:grid-cols-2 md:px-10 md:py-24">
+    <MotionSection className="mx-auto grid w-full max-w-[1440px] gap-10 px-4 py-16 sm:px-5 sm:py-20 md:grid-cols-2 md:px-10 md:py-24">
       <div>
         <h1 className="max-w-xl font-display text-[2.9rem] italic leading-[0.95] text-white sm:text-[3.4rem] md:text-[5rem]">{COPY.contactHeadline}</h1>
         <p className="mt-7 max-w-xl text-base font-light leading-relaxed text-silver-dim">{COPY.contactSubheadline}</p>

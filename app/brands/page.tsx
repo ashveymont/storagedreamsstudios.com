@@ -10,27 +10,27 @@ export default function BrandsPage() {
 
   return (
     <div>
-      <MotionSection className="mx-auto w-full max-w-[1440px] px-5 py-20 md:px-10 md:py-24">
+      <MotionSection className="mx-auto w-full max-w-[1440px] px-4 py-16 sm:px-5 sm:py-20 md:px-10 md:py-24">
         <h1 className="max-w-5xl font-display text-[2.9rem] italic leading-[0.95] text-white sm:text-[3.6rem] md:text-[5.5rem]">
           {COPY.brandsHeadline}
         </h1>
         <p className="mt-8 max-w-3xl text-base font-light text-silver-dim md:text-lg">{COPY.brandsSubheadline}</p>
       </MotionSection>
 
-      <MotionSection className="bg-white py-20 text-black">
-        <div className="mx-auto max-w-[1440px] px-5 md:px-10">
-          <p className="font-display text-6xl italic sm:text-7xl">{COPY.engagementRateStat}</p>
+      <MotionSection className="bg-white py-16 text-black sm:py-20">
+        <div className="mx-auto max-w-[1440px] px-4 sm:px-5 md:px-10">
+          <p className="break-words font-display text-4xl italic sm:text-6xl md:text-7xl">{COPY.engagementRateStat}</p>
           <p className="mt-3 text-[0.68rem] uppercase tracking-[0.25em]">{COPY.engagementRateLabel}</p>
           <p className="mt-6 max-w-3xl text-base text-black/75">{COPY.engagementRateContext}</p>
         </div>
       </MotionSection>
 
-      <MotionSection className="mx-auto w-full max-w-[1440px] px-5 py-20 md:px-10">
+      <MotionSection className="mx-auto w-full max-w-[1440px] px-4 py-16 sm:px-5 sm:py-20 md:px-10">
         <div className="grid gap-6 md:grid-cols-2">
           {DEMOGRAPHIC_STATS.map((item, index) => (
             <article
               key={`demo-${index}`}
-              className="border border-border bg-surface p-8 transition-colors hover:border-border-hover"
+              className="border border-border bg-surface p-6 transition-colors hover:border-border-hover sm:p-8"
             >
               <p className="font-display text-5xl italic text-white">{item.number}</p>
               <p className="mt-3 text-[0.68rem] uppercase tracking-[0.23em] text-silver-dim">{item.label}</p>
@@ -39,7 +39,7 @@ export default function BrandsPage() {
         </div>
       </MotionSection>
 
-      <MotionSection className="mx-auto w-full max-w-[1440px] px-5 py-20 md:px-10">
+      <MotionSection className="mx-auto w-full max-w-[1440px] px-4 py-16 sm:px-5 sm:py-20 md:px-10">
         <SectionEyebrow text={COPY.packagesHeadline} />
         {COPY.packagesSubheadline ? (
           <p className="mt-6 max-w-3xl text-base font-light text-silver-dim">{COPY.packagesSubheadline}</p>
@@ -49,12 +49,12 @@ export default function BrandsPage() {
             <PackageCard key={`package-${index}`} {...pkg} />
           ))}
         </div>
-        <div className="mt-6 border border-silver bg-surface p-8 font-display text-3xl italic text-white">
+        <div className="mt-6 border border-silver bg-surface p-6 font-display text-2xl italic text-white sm:p-8 sm:text-3xl">
           {COPY.annualPartnershipBanner}
         </div>
       </MotionSection>
 
-      <MotionSection className="mx-auto w-full max-w-[1440px] px-5 py-24 text-center md:px-10">
+      <MotionSection className="mx-auto w-full max-w-[1440px] px-4 py-20 text-center sm:px-5 sm:py-24 md:px-10">
         <h2 className="font-display text-[2.5rem] italic text-white sm:text-[3rem] md:text-[4rem]">{COPY.brandsCtaHeadline}</h2>
         <p className="mx-auto mt-6 max-w-3xl text-base font-light text-silver-dim">{COPY.brandsCtaSubheadline}</p>
         <div className="mt-10 flex flex-wrap items-center justify-center gap-4">

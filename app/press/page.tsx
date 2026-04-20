@@ -15,15 +15,15 @@ function PressIcon() {
 export default function PressPage() {
   return (
     <div>
-      <MotionSection className="mx-auto w-full max-w-[1440px] px-5 py-20 md:px-10 md:py-24">
+      <MotionSection className="mx-auto w-full max-w-[1440px] px-4 py-16 sm:px-5 sm:py-20 md:px-10 md:py-24">
         <h1 className="max-w-4xl font-display text-[2.9rem] italic leading-[0.95] text-white sm:text-[3.6rem] md:text-[5.5rem]">{COPY.pressHeadline}</h1>
       </MotionSection>
 
-      <MotionSection className="mx-auto grid w-full max-w-[1440px] gap-6 px-5 py-8 md:grid-cols-3 md:px-10">
+      <MotionSection className="mx-auto grid w-full max-w-[1440px] gap-6 px-4 py-8 sm:px-5 md:grid-cols-3 md:px-10">
         {PRESS_CHANNELS.map((channel, index) => (
           <article
             key={`press-channel-${index}`}
-            className="border border-border bg-surface p-8 transition-colors hover:border-border-hover"
+            className="border border-border bg-surface p-6 transition-colors hover:border-border-hover sm:p-8"
           >
             <PressIcon />
             <h2 className="mt-6 font-display text-3xl italic text-white">{channel.title}</h2>
@@ -32,8 +32,8 @@ export default function PressPage() {
         ))}
       </MotionSection>
 
-      <MotionSection className="mx-auto w-full max-w-[1440px] px-5 py-24 md:px-10">
-        <div className="border border-border bg-black p-10 md:p-14">
+      <MotionSection className="mx-auto w-full max-w-[1440px] px-4 py-20 sm:px-5 sm:py-24 md:px-10">
+        <div className="border border-border bg-black p-6 sm:p-10 md:p-14">
           <h2 className="font-display text-[2.4rem] italic text-white md:text-[3.8rem]">{COPY.pressEnquiriesHeadline}</h2>
           <p className="mt-6 max-w-3xl text-base font-light leading-relaxed text-silver-dim">{COPY.pressEnquiriesBody}</p>
           <a href="mailto:rich@rich-rosales.com" className="mt-10 inline-flex border border-silver px-7 py-3 text-xs uppercase tracking-[0.2em] text-silver hover:border-silver-light hover:text-silver-light">

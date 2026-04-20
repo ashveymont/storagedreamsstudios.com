@@ -19,7 +19,7 @@ export default function Home() {
 
   return (
     <div>
-      <section className="relative flex min-h-[100svh] items-center overflow-hidden px-5 md:px-10">
+      <section className="relative flex min-h-[100svh] items-center overflow-hidden px-4 sm:px-5 md:px-10">
         <div className="pointer-events-none absolute -right-10 top-10 font-display text-[28vw] italic leading-none text-white/5">
           R
         </div>
@@ -53,8 +53,14 @@ export default function Home() {
 
       <StatsBar stats={stats} />
 
-      <MotionSection className="mx-auto grid w-full max-w-[1440px] gap-12 px-5 py-20 md:grid-cols-5 md:gap-14 md:px-10 md:py-24">
-        <div className="space-y-6 md:col-span-3">
+      <section className="mx-auto grid w-full max-w-[1440px] gap-10 px-4 py-16 sm:gap-12 sm:px-5 sm:py-20 md:grid-cols-5 md:gap-14 md:px-10 md:py-24">
+        <motion.div
+          className="space-y-6 md:col-span-3"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.1 }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           {COPY.whoIsRichEyebrow ? <SectionEyebrow text={COPY.whoIsRichEyebrow} /> : null}
           <h2 className="font-display text-[2.45rem] italic leading-tight text-white sm:text-[3rem] md:text-[4.2rem]">{COPY.whoIsRichHeadline}</h2>
           <p className="max-w-3xl text-base font-light leading-relaxed text-silver-dim">{COPY.whoIsRichBodyParagraphOne}</p>
@@ -62,25 +68,33 @@ export default function Home() {
           <Link href="/about" className="inline-block text-sm uppercase tracking-[0.2em] text-silver hover:text-silver-light">
             Read the full story →
           </Link>
-        </div>
+        </motion.div>
         <div className="flex h-full flex-col gap-8 md:col-span-2">
-          <blockquote className="border-l-2 border-silver pl-8 font-display text-[1.35rem] italic leading-relaxed text-white md:text-[1.45rem]">
+          <motion.blockquote
+            className="border-l-2 border-silver pl-5 font-display text-[1.2rem] italic leading-relaxed text-white sm:pl-8 sm:text-[1.35rem] md:text-[1.45rem]"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, amount: 0.1 }}
+            transition={{ duration: 0.6, ease: "easeOut" }}
+          >
             {COPY.whoIsRichPullQuote}
-          </blockquote>
-          <div className="relative min-h-[260px] flex-1 md:min-h-[320px]">
+          </motion.blockquote>
+          <div className="relative min-h-[220px] flex-1 sm:min-h-[260px] md:min-h-[320px]">
             <Image
-              src="/PotraitForWebsite.svg"
+              src="/RichRosalesFaviPNG2.png"
               alt="Rich Rosales portrait"
               fill
+              priority
+              fetchPriority="high"
               className="object-contain object-bottom"
-              sizes="(max-width: 768px) 100vw, 40vw"
+              sizes="(max-width: 768px) 100vw, (max-width: 1200px) 42vw, 480px"
             />
           </div>
         </div>
-      </MotionSection>
+      </section>
 
-      <MotionSection className="bg-black py-20 md:py-24">
-        <div className="mx-auto w-full max-w-[1440px] px-5 md:px-10">
+      <MotionSection className="bg-black py-16 md:py-24">
+        <div className="mx-auto w-full max-w-[1440px] px-4 sm:px-5 md:px-10">
           {COPY.characterEyebrow ? <SectionEyebrow text={COPY.characterEyebrow} /> : null}
           <h2 className="mt-6 max-w-4xl font-display text-[2.4rem] italic text-white sm:text-[3rem] md:text-[4rem]">{COPY.characterHeadline}</h2>
           <p className="mt-6 max-w-3xl text-base font-light text-silver-dim">{COPY.characterSubheadline}</p>
@@ -100,8 +114,8 @@ export default function Home() {
         </div>
       </MotionSection>
 
-      <MotionSection className="bg-carbon py-20 md:py-24">
-        <div className="mx-auto w-full max-w-4xl px-5 text-center md:px-10">
+      <MotionSection className="bg-carbon py-16 md:py-24">
+        <div className="mx-auto w-full max-w-4xl px-4 text-center sm:px-5 md:px-10">
           <p className="text-[0.75rem] uppercase tracking-[0.3em] text-silver-light md:text-sm">{COPY.whyBrandsEyebrow}</p>
           <blockquote className="mt-8 font-display text-[2rem] italic leading-tight text-white md:text-[2.2rem]">
             {COPY.whyBrandsQuote}

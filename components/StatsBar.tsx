@@ -34,9 +34,9 @@ function StatItem({ number, label }: Stat) {
   return (
     <div ref={ref} className="border-b border-border px-4 py-8 text-center md:border-b-0 md:border-r last:md:border-r-0">
       {shouldAnimate && target > 0 ? (
-        <motion.p className="font-display text-5xl leading-none text-white">{rounded}</motion.p>
+        <motion.p className="font-display text-4xl leading-none text-white sm:text-5xl">{rounded}</motion.p>
       ) : (
-        <p className="font-display text-5xl leading-none text-white">{number}</p>
+        <p className="font-display text-4xl leading-none text-white sm:text-5xl">{number}</p>
       )}
       <p className="mt-3 text-[0.68rem] uppercase tracking-[0.25em] text-silver-dim">{label}</p>
     </div>

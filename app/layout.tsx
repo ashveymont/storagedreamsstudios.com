@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
@@ -18,8 +18,14 @@ const dmSans = DM_Sans({
   weight: ["300", "400"],
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://storagedreamsstudios.com";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://rich-rosales.com";
 const ogImageUrl = process.env.NEXT_PUBLIC_OG_IMAGE_URL ?? `${siteUrl}/RichRosalesFavi.png`;
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  viewportFit: "cover",
+};
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -66,10 +72,11 @@ export const metadata: Metadata = {
   },
   icons: {
     icon: [
+      { url: "/icon.png", sizes: "256x256", type: "image/png" },
       { url: "/favicon.svg", type: "image/svg+xml" },
       { url: "/favicon-256.png", sizes: "256x256", type: "image/png" },
     ],
-    shortcut: ["/favicon.svg"],
+    shortcut: ["/icon.png"],
     apple: [{ url: "/apple-touch-icon.png", sizes: "180x180", type: "image/png" }],
   },
 };
@@ -81,9 +88,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className={`${cormorant.variable} ${dmSans.variable} h-full antialiased`}>
-      <body className="min-h-full bg-black font-body text-white">
+      <body className="min-h-full overflow-x-hidden bg-black font-body text-white">
         <Navbar />
-        <main className="flex-1 pt-20">
+        <main className="flex-1 pt-[calc(5rem+env(safe-area-inset-top,0px))]">
           <PageTransition>{children}</PageTransition>
         </main>
         <Footer />

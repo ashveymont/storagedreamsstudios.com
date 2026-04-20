@@ -27,15 +27,15 @@ export default function Navbar() {
       initial={{ y: "-100%" }}
       animate={{ y: 0 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
-      className={`fixed inset-x-0 top-0 z-50 bg-black/88 backdrop-blur-[16px] transition-colors ${scrolled ? "border-b border-border" : "border-b border-transparent"}`}
+      className={`fixed inset-x-0 top-0 z-50 bg-black/88 pt-[env(safe-area-inset-top,0px)] backdrop-blur-[16px] transition-colors ${scrolled ? "border-b border-border" : "border-b border-transparent"}`}
     >
-      <div className="mx-auto flex h-20 w-full max-w-[1440px] items-center justify-between gap-5 px-5 md:px-10">
+      <div className="mx-auto flex h-20 w-full max-w-[1440px] items-center justify-between gap-3 px-4 sm:gap-5 sm:px-5 md:px-10">
         <Link href="/" className="font-display text-2xl font-semibold italic text-white transition-colors hover:text-silver-light">
           Rich Rosales
         </Link>
         <button
           type="button"
-          className="inline-flex border border-border px-3 py-2 text-[0.62rem] uppercase tracking-[0.22em] text-silver transition-colors hover:border-border-hover hover:text-silver-light md:hidden"
+          className="inline-flex min-h-[44px] min-w-[44px] items-center justify-center border border-border px-3 py-2 text-[0.62rem] uppercase tracking-[0.22em] text-silver transition-colors hover:border-border-hover hover:text-silver-light md:hidden"
           onClick={() => setMenuOpen((prev) => !prev)}
           aria-label="Toggle navigation"
           aria-expanded={menuOpen}
@@ -78,7 +78,7 @@ export default function Navbar() {
         transition={{ duration: 0.25, ease: "easeOut" }}
         className="overflow-hidden border-t border-border md:hidden"
       >
-        <nav className="space-y-1 px-5 py-4">
+        <nav className="space-y-0 px-4 py-3 sm:px-5 sm:py-4">
           {NAV_LINKS.map((link) =>
             link.external ? (
               <a
@@ -86,7 +86,7 @@ export default function Navbar() {
                 href={link.href}
                 target="_blank"
                 rel="noreferrer"
-                className="block py-2 text-[0.72rem] uppercase tracking-[0.2em] text-silver-dim transition-colors hover:text-white"
+                className="flex min-h-[44px] items-center text-[0.72rem] uppercase tracking-[0.2em] text-silver-dim transition-colors hover:text-white"
               >
                 {link.label}
               </a>
@@ -94,7 +94,7 @@ export default function Navbar() {
               <Link
                 key={link.label}
                 href={link.href}
-                className="block py-2 text-[0.72rem] uppercase tracking-[0.2em] text-silver-dim transition-colors hover:text-white"
+                className="flex min-h-[44px] items-center text-[0.72rem] uppercase tracking-[0.2em] text-silver-dim transition-colors hover:text-white"
               >
                 {link.label}
               </Link>
@@ -102,7 +102,7 @@ export default function Navbar() {
           )}
           <Link
             href="/brands"
-            className="mt-3 inline-flex border border-silver px-4 py-2 text-[0.65rem] uppercase tracking-[0.2em] text-silver transition-colors hover:bg-white hover:text-black"
+            className="mt-2 inline-flex min-h-[44px] items-center border border-silver px-4 py-2 text-[0.65rem] uppercase tracking-[0.2em] text-silver transition-colors hover:bg-white hover:text-black"
           >
             Partner With Rich
           </Link>

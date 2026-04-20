@@ -30,22 +30,22 @@ export default function ContactForm({ options }: ContactFormProps) {
   };
 
   return (
-    <form onSubmit={onSubmit} className="space-y-6 border border-border bg-black p-7 md:p-10">
+    <form onSubmit={onSubmit} className="min-w-0 space-y-6 border border-border bg-black p-6 sm:p-7 md:p-10">
       <label className="block">
         <span className="text-[0.65rem] uppercase tracking-[0.22em] text-silver">Name</span>
-        <input name="name" required className="mt-2 w-full border border-border bg-carbon px-4 py-3 font-light text-white outline-none transition-colors focus:border-border-hover" />
+        <input name="name" required className="mt-2 w-full border border-border bg-carbon px-4 py-3 text-base font-light text-white outline-none transition-colors focus:border-border-hover" />
       </label>
       <label className="block">
         <span className="text-[0.65rem] uppercase tracking-[0.22em] text-silver">Company &amp; Brand</span>
-        <input name="company" required className="mt-2 w-full border border-border bg-carbon px-4 py-3 font-light text-white outline-none transition-colors focus:border-border-hover" />
+        <input name="company" required className="mt-2 w-full border border-border bg-carbon px-4 py-3 text-base font-light text-white outline-none transition-colors focus:border-border-hover" />
       </label>
       <label className="block">
         <span className="text-[0.65rem] uppercase tracking-[0.22em] text-silver">Email</span>
-        <input type="email" name="email" required className="mt-2 w-full border border-border bg-carbon px-4 py-3 font-light text-white outline-none transition-colors focus:border-border-hover" />
+        <input type="email" name="email" required className="mt-2 w-full border border-border bg-carbon px-4 py-3 text-base font-light text-white outline-none transition-colors focus:border-border-hover" />
       </label>
       <label className="block">
         <span className="text-[0.65rem] uppercase tracking-[0.22em] text-silver">Partnership Interest</span>
-        <select name="interest" required className="mt-2 w-full border border-border bg-carbon px-4 py-3 font-light text-white outline-none transition-colors focus:border-border-hover">
+        <select name="interest" required className="mt-2 w-full border border-border bg-carbon px-4 py-3 text-base font-light text-white outline-none transition-colors focus:border-border-hover">
           <option value="">Select</option>
           {selectable.map((option, index) => (
             <option key={`interest-${index}`} value={option}>
@@ -56,7 +56,7 @@ export default function ContactForm({ options }: ContactFormProps) {
       </label>
       <label className="block">
         <span className="text-[0.65rem] uppercase tracking-[0.22em] text-silver">Message</span>
-        <textarea name="message" rows={6} required className="mt-2 w-full border border-border bg-carbon px-4 py-3 font-light text-white outline-none transition-colors focus:border-border-hover" />
+        <textarea name="message" rows={6} required className="mt-2 w-full border border-border bg-carbon px-4 py-3 text-base font-light text-white outline-none transition-colors focus:border-border-hover" />
       </label>
       <button type="submit" className="inline-flex border border-white bg-white px-6 py-3 text-xs uppercase tracking-[0.2em] text-black transition-colors hover:bg-black hover:text-white">
         Send Enquiry

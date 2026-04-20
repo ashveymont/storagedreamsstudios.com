@@ -35,7 +35,7 @@ export const COPY = {
   // COPY: Hero Eyebrow
   heroEyebrow: "",
   // COPY: Hero Headline
-  heroHeadline: "1.1 million people are watching.",
+  heroHeadline: "1.3M people are watching.",
   // COPY: Hero Headline Accent
   heroHeadlineAccent: "Are you next?",
   // COPY: Hero Subheadline
@@ -119,7 +119,7 @@ export const COPY = {
     "Rich Rosales creates sponsored content that doesn't feel sponsored. His character is already talking about the tech world your brand lives in — the software, the gadgets, the culture, the chaos. The best integrations don't interrupt the story. They become part of it.",
 
   // COPY: Engagement Rate Stat
-  engagementRateStat: "1.1 million",
+  engagementRateStat: "1.3M",
   // COPY: Engagement Rate Label
   engagementRateLabel: "People are watching",
   // COPY: Engagement Rate Context
@@ -144,7 +144,7 @@ export const COPY = {
   offeringFive: "Content strategy consulting — we help your team think like creators",
 
   // COPY: Brands CTA Headline
-  brandsCtaHeadline: "Ready to reach 1.1 million people who actually care about tech?",
+  brandsCtaHeadline: "Ready to reach 1.3 million people who actually care about tech?",
   // COPY: Brands CTA Sub
   brandsCtaSubheadline:
     "Download our media kit or email us directly at rich@rich-rosales.com. We respond within 24 hours. We close within a week.",
@@ -155,10 +155,10 @@ export const COPY = {
   pressEnquiriesHeadline: "For interviews, features, podcast appearances, and media requests:",
   // COPY: Press Enquiries Body
   pressEnquiriesBody:
-    "rich@rich-rosales.com\n\nFor TV, film, and speaking engagements: contact LBI Entertainment via storagedreamsstudios.com",
+    "rich@rich-rosales.com\n\nFor TV, film, and speaking engagements: contact Rich Rosales via rich@rich-rosales.com",
 
   // COPY: Contact Headline
-  contactHeadline: "Ready to reach 1.1 million people who actually care about tech?",
+  contactHeadline: "Ready to reach 1.3 million people who actually care about tech?",
   // COPY: Contact Sub
   contactSubheadline:
     "Download our media kit or email us directly at rich@rich-rosales.com. We respond within 24 hours. We close within a week.",
@@ -304,7 +304,7 @@ export const PRESS_CHANNELS = [
   // COPY: Press Channel 3 Title + Body
   {
     title: "TV, Film, Speaking",
-    body: "For TV, film, and speaking engagements: contact LBI Entertainment via storagedreamsstudios.com",
+    body: "For TV, film, and speaking engagements: contact Rich Rosales via rich@rich-rosales.com",
   },
 ] as const;
 
