@@ -59,20 +59,20 @@ export const COPY = {
   whoIsRichEyebrow: "",
   // COPY: Who Is Rich Headline
   whoIsRichHeadline:
-    "Rich Rosales built one of the internet's most recognisable comedy characters — the Rich Tech Bro — from a single idea: what if the most relatable person in tech was also the funniest?",
+    "Rich Rosales built one of the internet's most recognisable comedy characters — the Rich Tech Friend — from a single idea: what if the most relatable person in tech was also the funniest?",
   // COPY: Who Is Rich Body
   whoIsRichBodyParagraphOne:
     "With a decade of stand-up comedy, training at The Groundlings, and screen credits on NCIS and The Orville, Rich brings real craft to a space flooded with trend-chasers. His content doesn't just get views. It gets remembered.",
   whoIsRichBodyParagraphTwo: "Based in NYC. Performing everywhere else.",
   // COPY: Who Is Rich Pull Quote
   whoIsRichPullQuote:
-    "Rich Rosales built one of the internet's most recognisable comedy characters — the Rich Tech Bro.",
+    "Rich Rosales built one of the internet's most recognisable comedy characters — the Rich Tech Friend.",
 
   // COPY: Character Section Eyebrow
   characterEyebrow: "",
   // COPY: Character Section Headline
   characterHeadline:
-    "The Rich Tech Bro is the guy who has made it — and is somehow still the most relatable person in the room.",
+    "The Rich Tech Friend is the guy who has made it — and is somehow still the most relatable person in the room.",
   // COPY: Character Section Sub
   characterSubheadline:
     "He talks about equity like it's small talk. He has strong opinions about standing desks. He Slacks you at 11pm and calls it async culture. Sound familiar? Good. So does your audience.",
@@ -178,8 +178,8 @@ export const CHARACTER_CARDS: CharacterCardCopy[] = [
   // COPY: Character Card 1 Title / Body / Brand Fit
   {
     tag: "Character",
-    title: "The Rich Tech Bro",
-    body: "The Rich Tech Bro is the guy who has made it — and is somehow still the most relatable person in the room.",
+    title: "The Rich Tech Friend",
+    body: "The Rich Tech Friend is the guy who has made it — and is somehow still the most relatable person in the room.",
     brandFit: "Built for culture-first product storytelling",
   },
   // COPY: Character Card 2 Title / Body / Brand Fit
